@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap');
+
+.container {
+    font-family: 'Roboto', sans-serif;
+    width: 750px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1 {
+    font-size: 3rem;
+}
+
+h2 {
+    font-size: 2.5rem;
+    font-weight: normal;
+}
+
+h3 {
+    font-size: 2rem;
+    font-weight: lighter;
+}
+
+a {
+    color: #1b69c9;
+}
+
+.selection {
+    border: inherit;
+    border-radius: 3px;
+    background: #f2f1f1;
+    font-weight: bold;
+    font-size: smaller;
+    padding: 2px;
+}
+
+.selection_2 {
+    border: inherit;
+    border-radius: 3px;
+    background: #f2f1f1;
+    font-size: smaller;
+    padding: 2px;
+}
+
+.column_example {
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.example_header {
+    border: solid #d2d2d2 1px;
+    border-bottom: none;
+    width: 750px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    padding: 10px;
+}
+
+.column_variants {
+
+    border: solid #d2d2d2 1px;
+    width: 373px;
+    border-bottom-left-radius: 5px;
+}
+
+.column_results {
+    border: solid #d2d2d2 1px;
+    border-left: none;
+    width: 373px;
+    border-bottom-right-radius: 5px;
+
+}
+
+.results {
+    column-count: 2;
+    padding: 40px 20px;
+}
+
+.variant {
+    border: solid #d2d2d2 1px;
+    border-radius: 5px;
+    background: #f9f9fb;
+    margin: 10px;
+    padding: 30px 0px 0px 15px;
+    width: 330px;
+    height: 40px;
+    font-size: small;
+}
+
+.variant:first-child {
+    box-shadow: 0px 0px 0px 3px rgba(0, 144, 237, 0.4)
+}
+
+.syntax {
+    border: inherit;
+    border-radius: 5px;
+    background: #f2f1f1;
+    padding: 20px;
+}
+
+.syntax p {
+    margin: 30px;
+    line-height: 2rem;
+}
+
+.syntax a {
+    color: #d82655;
+}
+
+.comment {
+    color: #b2b1b1;
+}
+
+.select_column {
+    color: #d82655;
+}
+
+.values p {
+    margin-left: 15px;
+    line-height: 1.5rem;
+}
+
+#f_definition {
+    width: 750px;
+    border-collapse: collapse;
+}
+
+#f_definition tr:nth-child(odd) {
+    border-top: solid #d5d5d5 1px;
+    border-bottom: solid #d5d5d5 1px;
+    background: #f9f9fb;
+}
+
+#f_definition th {
+    padding: 15px;
+    text-align: left;
+}

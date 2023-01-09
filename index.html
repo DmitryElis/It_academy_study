@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Yeliseyenka_DZ</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,700;0,800;1,200;1,300;1,400&display=swap');
+
+    body {
+      text-align: center;
+      background: gray;
+    }
+
+    li {
+      list-style-type: none;
+    }
+
+    a {
+      text-decoration: none;
+      color: gray;
+    }
+
+    a:hover {
+      color: #00fefe;
+    }
+
+    a:active {
+      color: #008787;
+    }
+
+    .container {
+      text-align: center;
+      color: aliceblue;
+      background-color: transparent;
+      font-family: 'Sofia Sans Semi Condensed', sans-serif;
+      font-size: 2rem;
+      line-height: 2rem;
+
+    }
+
+    .list {
+      display: flex;
+      justify-content: center;
+    }
+
+    .list_1 {
+      margin: 25px;
+      padding: 15px 30px;
+      border: solid #00fefe 2px;
+      border-radius: 50px;
+      border-top-left-radius: 10px;
+      border-bottom-right-radius: 10px;
+      background: #00fefe;
+      line-height: 100px;
+
+    }
+
+    .list_2 {
+      margin: 25px;
+      padding: 15px 30px;
+      border: solid #00fefe 2px;
+      border-radius: 50px;
+      border-top-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      background: #00fefe;
+      line-height: 100px;
+    }
+
+    .list_1:hover,
+    .list_2:hover {
+      background: gray;
+
+    }
+
+    .list_1:active,
+    .list_2:active {
+      border: #008787;
+      background: rgb(61, 60, 60);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <h1>Домашние задания</h1>
+    <p>Dzmitry Yeliseyenka</p>
+    <div class="list">
+      <div class="first_list">
+        <ul>
+          <li><span class="list_1"><a href="#">Задание 1</a></span></li>
+          <li><span class="list_1"><a href="#">Задание 3</a></span></li>
+          <li><span class="list_1"><a href="#">Задание 5</a></span></li>
+          <li><span class="list_1"><a href="#">Задание 7</a></span></li>
+        </ul>
+      </div>
+      <div class="second_list">
+        <ul>
+          <li><span class="list_2"><a href="#">Задание 2</a></span></li>
+          <li><span class="list_2"><a href="#">Задание 4</a></span></li>
+          <li><span class="list_2"><a href="#">Задание 6</a></span></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</body>
+
+</html>

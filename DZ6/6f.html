@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <title>6f</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,700;0,900;1,700&display=swap');
+
+        .contact_form {
+            width: 900px;
+            margin: 0 auto;
+            background: #ebebeb;
+            font-family: 'Roboto', sans-serif;
+        }
+
+        .header {
+            text-align: center;
+            line-height: 1.5rem;
+            padding-top: 30px;
+            color: #5a5858;
+            font-weight: 600;
+            margin-bottom: 40px;
+        }
+
+        textarea {
+            resize: none;
+            font-style: italic;
+            font-weight: 200;
+            border: solid #d8d8d8 2px;
+            border-radius: 3px;
+            padding: 10px 85px 0 10px;
+
+        }
+
+        textarea::-webkit-input-placeholder {
+            color: #c2c2c2;
+        }
+
+        .name {
+            margin-right: 10px;
+        }
+
+        .content {
+            display: flex;
+        }
+
+        .contact_area {
+            width: 550px;
+            margin-left: 65px;
+            text-align: right;
+
+        }
+
+        .contacts {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .message_area textarea {
+            width: 100%;
+            box-sizing: border-box;
+            height: 200px;
+            margin: 20px 0;
+
+
+        }
+
+        .contact_area button {
+            color: #f1d8d2;
+            background: #a57c79;
+            border: none;
+            font-weight: 600;
+            padding: 10px;
+            margin: 10px 5px 50px 5px;
+        }
+
+        .contact_area button:hover {
+            color: #a57c79;
+            background: #f1d8d2;
+        }
+
+        .contact_area button:active {
+            color: #f1d8d2;
+            background: #8a7b77;
+        }
+
+        .info {
+            color: #5a5858;
+        }
+
+        .info p {
+            font-size: smaller;
+            font-weight: 600;
+            line-height: 0.6rem;
+            padding: 0 20px;
+        }
+
+        h3 {
+            margin: 0px 20px 45px;
+            font-weight: normal;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="contact_form">
+        <div class="header">
+            <h1>Контакты</h1>
+            <p>Свяжитесь со мной,если вам надо поговорить. Я умею слушать.</p>
+        </div>
+        <div class="content">
+            <div class="contact_area">
+                <div class="contacts">
+                    <div class="name"><textarea placeholder="Ваше имя"></textarea></div>
+                    <div class="email"><textarea placeholder="Ваш email"></textarea></div>
+                </div>
+                <div class="message_area"><textarea placeholder="Ваше сообщение..."></textarea></div>
+                <button>ОТПРАВИТЬ</button>
+            </div>
+            <div class="info">
+                <h3>Информация</h3>
+                <p><i class="fa fa-map-marker"></i>&ensp;мопс Валли</p>
+                <p>&ensp;&ensp;частный дом</p>
+                <p>&ensp;&ensp;деревня Valli</p>
+                <p><i class="fa fa-phone"></i>&ensp;+1 800(тел)238 25 98</p>
+                <p><i class="fa fa-fax"></i>&ensp;+1 500(ксерокс)6341 8690</p>
+                <p><i class="fa fa-envelope"></i>&ensp;Info(at)Valli.com</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+
+</html>

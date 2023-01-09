@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4c</title>
+    <style>
+        table {
+            font-family: sans-serif;
+            font-size: 17px;
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        thead,
+        tfoot {
+            background: #353942;
+            color: #ecf0f1;
+        }
+
+        td {
+            border: solid #353942;
+            border-width: 0 1px 1px 0;
+            padding: 20px 40px;
+            background: #2e3337;
+            color: #ecf0f1
+        }
+
+        th {
+            padding: 20px 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <table>
+        <thead>
+            <tr>
+                <th>Сотрудник</th>
+                <th>Зарплата</th>
+                <th>Бонусы</th>
+                <th>Менеджер</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Алексей Примадонин</td>
+                <td>750&#x24</td>
+                <td>63&#x24</td>
+                <td rowspan="2">Кодовёнок Хекслетович</td>
+            </tr>
+            <tr>
+                <td>Вениамин Редакторович</td>
+                <td>1200&#x24</td>
+                <td>0</td>
+            </tr>
+            <tr>
+                <td>Джедай Падаванов</td>
+                <td>500&#x24</td>
+                <td>100&#x24</td>
+                <td>Королева Верстальщина</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr style="text-align: right; font-weight: bold;">
+                <td colspan="4">Всего: 2613&#x24</td>
+
+            </tr>
+        </tfoot>
+    </table>
+
+</body>
+
+</html>

@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links_examples</title>
+    <style>
+        a {
+            color: green;
+            padding: 10px 50px;
+        }
+
+        a:hover {
+            color: red;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0 auto;
+        }
+
+        .example_1 li {
+            display: inline;
+            border-right: solid red 3px;
+        }
+
+        .example_1 li:last-child {
+            border-right: none;
+        }
+
+        .example_1 {
+            margin: 20px auto;
+        }
+
+        .example_4 {
+            margin: 20px auto;
+        }
+
+        .example_4 li {
+            float: left;
+        }
+
+        .example_4 a {
+            display: block;
+            border-right: solid red 2px;
+        }
+
+        .example_2 li {
+            display: inline-block;
+
+        }
+
+        .example_3 li::after {
+            content: "|";
+            font-size: 2rem;
+            color: red;
+        }
+
+        .example_3 li:last-child::after {
+            display: none;
+        }
+
+        .example_2 a {
+            display: block;
+            border-right: solid red 2px;
+        }
+
+        .example_3 ul {
+            display: flex;
+            margin: 20px auto;
+        }
+
+        #end {
+            border-right: none;
+        }
+
+        .example_4 li:last-child a {
+            border-right: none;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="example_1">
+        <!--Испольован метод display: inline. Разделения выполнены через <li> + :last-child-->
+        <ul>
+            <li><a href="#">Первая ссылка</a></li>
+            <li><a href="#">Вторая ссылка</a></li>
+            <li><a href="#">Третья ссылка</a></li>
+            <li><a href="#">Четвертая ссылка</a></li>
+            <li><a href="#">Пятая ссылка</a></li>
+        </ul>
+    </div>
+    <div class="example_2">
+        <!--Испольован метод display: inline-block. Разделения выполнены через <a> + id-->
+        <ul>
+            <li><a href="#">Первая ссылка</a></li>
+            <li><a href="#">Вторая ссылка</a></li>
+            <li><a href="#">Третья ссылка</a></li>
+            <li><a href="#">Четвертая ссылка</a></li>
+            <li><a id="end" href="#">Пятая ссылка</a></li>
+        </ul>
+    </div>
+    <div class="example_3">
+        <!--Испольован метод display: flex. Разделения выполнены через :after + :last-child-->
+        <ul>
+            <li><a href="#">Первая ссылка</a></li>
+            <li><a href="#">Вторая ссылка</a></li>
+            <li><a href="#">Третья ссылка</a></li>
+            <li><a href="#">Четвертая ссылка</a></li>
+            <li><a href="#">Пятая ссылка</a></li>
+        </ul>
+    </div>
+    <div class="example_4">
+        <!--Испольован метод float: left. Разделения выполнены через <a> + :last-child-->
+        <ul>
+            <li><a href="#">Первая ссылка</a></li>
+            <li><a href="#">Вторая ссылка</a></li>
+            <li><a href="#">Третья ссылка</a></li>
+            <li><a href="#">Четвертая ссылка</a></li>
+            <li><a href="#">Пятая ссылка</a></li>
+        </ul>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>4d</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400&display=swap');
+
+        table {
+            border-collapse: collapse;
+            text-align: left;
+        }
+
+        td:first-child {
+            font-weight: bold;
+        }
+
+        td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        table#second {
+            font-size: 1.5rem;
+            border-collapse: collapse;
+            border-radius: 20px;
+            text-align: right;
+        }
+
+        table#second th,
+        table#second td:first-child {
+            text-align: left;
+            font-weight: bold;
+            background: #bec0bf;
+            border: 1px solid #d5d5d5;
+
+            padding: 10px;
+        }
+
+        table#second td:first-child {
+            background: #dcdcdc;
+        }
+
+        table#second td {
+            border: 1px solid #d5d5d5;
+            width: 150px;
+        }
+
+        div {
+            margin: 10px 30px;
+            font-family: 'Roboto', sans-serif;
+            font-size: 1.2rem;
+
+
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>HTML table basics</h1>
+        <a href="#" style=" padding:5px; border:1px solid #dadada; border-radius: 4px;">Overview: Tables</a><br>
+
+        <p>This article gets you started with HTML tables, covering the very basics such<br>
+            as rows, cells, headings, making cells span multiple columns and rows, and how<br>
+            to group together all the cells in a column for styling purposes.</p>
+
+        <table>
+            <tr>
+                <td>Prerequisites:</td>
+                <td>The basics of HTML (see <a href="#">Introduction to HTML</a>).</td>
+            </tr>
+            <tr>
+                <td>Objective:</td>
+                <td>To gain basic familiarity with HTML tables.</td>
+            </tr>
+        </table>
+        <h2>What is a table?</h2>
+        <p>A table is a structured set of data made up of rows and columns (<strong>tabular data</strong>).<br>
+            A table allows you to quickly and easily look up values that indicate some kind<br>
+            of connection between different types of data, for example a person and their<br>
+            age, or a day of the week, or the timetable for a local swimming pool.<br>
+        </p>
+        <div style="text-align: center; ">
+            <table id="second">
+                <tr>
+                    <th>Person</th>
+                    <th>Age</th>
+                </tr>
+                <tr>
+                    <td>Chris</td>
+                    <td>38</td>
+                </tr>
+                <tr>
+                    <td>Dennis</td>
+                    <td>45</td>
+                </tr>
+                <tr>
+                    <td>Sarah</td>
+                    <td>29</td>
+                </tr>
+                <tr>
+                    <td>Karen</td>
+                    <td>47</td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+
+
+</body>
+
+</html>

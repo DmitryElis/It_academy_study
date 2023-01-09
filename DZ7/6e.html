@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>6e</title>
+    <style>
+        .qick_start {
+            width: 750px;
+            margin: 0 auto;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 2rem;
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: normal;
+            margin: 34px 0px;
+        }
+
+        h2 {
+            font-size: 2.5rem;
+            font-weight: normal;
+            margin: 48px 0 0 0;
+        }
+
+        h3 {
+            font-size: 35px;
+            font-weight: normal;
+            margin: 35px 0 20px;
+        }
+
+        h4 {
+            font-size: 30px;
+            font-weight: normal;
+            margin: 27px 0 20px;
+        }
+
+        .introduction {
+            margin: 0 0 18px;
+        }
+
+        a {
+            text-decoration: none;
+            color: #04b;
+        }
+
+        .selector {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 200;
+            border-radius: 3px;
+            background-color: #f7f7f5;
+            padding: 0 3px;
+        }
+
+        .example {
+            font-family: 'Courier New', Courier, monospace;
+            font-weight: 200;
+            background-color: #f2f2ed;
+            padding: 15px 20px 15px 45px;
+            margin: 20px 0;
+        }
+
+        .comment {
+            color: #93a1a1;
+        }
+
+        .element {
+            color: #268bd2;
+        }
+
+        .class_name {
+            color: #2aa198;
+        }
+
+        .example_1 {
+            margin-left: -40px;
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="qick_start">
+        <h1>Быстрый старт</h1>
+        <div class="introduction">
+            <h2>Введение</h2>
+            <p>БЭМ (Блок, Элемент, Модификатор) — компонентный подход к веб-разработке.
+                В его основе лежит принцип разделения интерфейса на независимые блоки.
+                Он позволяет легко и быстро разрабатывать интерфейсы любой сложности и
+                повторно использовать существующий код, избегая «Copy-Paste».</p>
+        </div>
+        <div class="content">
+            <h2>Содержание</h2>
+            <ul>
+                <li><a href="#">Блок</a></li>
+                <li><a href="#">Элемент</a></li>
+                <li><a href="#">Когда создавать блок, когда — элемент?</a></li>
+                <li><a href="#">Модификатор</a></li>
+                <li><a href="#">Микс</a></li>
+                <li><a href="#">Файловая структура</a></li>
+            </ul>
+        </div>
+        <div class="block">
+            <h2>Блок</h2>
+            <p>Функционально независимый компонент страницы, который может быть повторно использован.
+                В HTML блоки представлены атрибутом <span class="selector">class</span>.</p>
+            <p>Особенности:</p>
+            <ul>
+                <li><a href="#">Название блока</a> характеризует смысл («что это?» — «меню»: <span
+                        class="selector">menu</span>,
+                    «кнопка»: <span class="selector">button</span>),
+                    а не состояние («какой, как выглядит?» — «красный»: <span class="selector">red</span>,
+                    «большой»: <span class="selector">big</span>).</li>
+                <div class="example_1">
+                    <p>Пример</p>
+                    <div class="example">
+                        <span class="comment">&lt;!-- Верно. Семантически осмысленный блок `error` --></span><br>
+                        &lt;<span class="element">div</span> class=<span class="class_name">"error"</span>>&lt;/<span
+                            class="element">div</span>><br>
+                        <br>
+                        <span class="comment">&lt;!-- Неверно. Описывается внешний вид --></span><br>
+                        &lt;<span class="element">div</span> class=<span class="class_name">"red-text"</span>>&lt;/<span
+                            class="element">div</span>><br>
+                    </div>
+                </div>
+                <li>Блок не должен влиять на свое окружение, т. е. блоку не следует задавать внешнюю
+                    геометрию (в виде отступов, границ, влияющих на размеры) и позиционирование.</li>
+                <li>В CSS по БЭМ также не рекомендуется использовать селекторы по тегам или
+                    <span class="selector">id</span>.
+                </li>
+            </ul>
+            <p>Таким образом обеспечивается независимость, при которой возможно повторное использование или перенос
+                блоков с места на место.</p>
+        </div>
+        <div class="attachment">
+            <h3>Принцип работы с блоками</h3>
+            <h4>Вложенность</h4>
+            <ul>
+                <li>Блоки можно вкладывать друг в друга.</li>
+                <li>Допустима любая вложенность блоков.</li>
+            </ul>
+            <p>Пример</p>
+            <div class="example">
+                <span class="comment">&lt;!-- Блок `header` --></span><br>
+                &lt;<span class="element">header</span> class=<span class="class_name">"header"</span>><br>
+                <span class="comment">&lt;!-- Вложенный блок `logo` --></span><br>
+                &lt;<span class="element">div</span> class=<span class="class_name">"logo"</span>>&lt;/<span
+                    class="element">div</span>><br>
+                <br>
+                <span class="comment">&lt;!-- Вложенный блок `search-form` --></span><br>
+                &lt;<span class="element">form</span> class=<span class="class_name">"search-form"</span>>&lt;/<span
+                    class="element">form</span>><br>
+                &lt;/<span class="element">header</span>>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
