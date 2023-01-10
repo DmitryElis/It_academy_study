@@ -1,0 +1,262 @@
+@import url('https://fonts.googleapis.com/css2?family=Questrial&family=Roboto:wght@700&display=swap');
+
+html,
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    text-align: center;
+}
+
+.conteiner {
+    font-family: 'Questrial', sans-serif;
+}
+
+.header {
+    width: 960px;
+    text-align: center;
+    margin: 0px auto;
+    padding-bottom: 105px;
+}
+
+.navigate ul {
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    justify-content: space-between;
+    padding: 0px;
+    margin: 0px;
+
+
+
+}
+
+.navigate li a {
+    text-decoration: none;
+    color: #828282;
+    font-size: 18px;
+    line-height: 22px;
+    margin: 30px 0px;
+
+
+}
+
+.navigate li a:hover {
+    color: #070707;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    position: relative;
+}
+
+.navigate li a:active {
+    color: #373737;
+}
+
+.navigate {
+    width: 960px;
+    padding: 30px 0px;
+    text-align: center;
+    margin: 0px auto;
+}
+
+.border {
+    width: 940px;
+    height: 1px;
+    background: #828282;
+    margin: 0px auto;
+}
+
+.preview h1 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 47.3392px;
+    line-height: 59px;
+    width: 120px;
+    height: 120px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+
+.preview {
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+}
+
+.text_vertical {
+    font-size: 16px;
+    line-height: 20px;
+    color: #828282;
+    transform: rotate(-90deg);
+    padding: 0px;
+    margin-top: 69.5px;
+}
+
+.preview p {
+    font-size: 18px;
+    line-height: 22px;
+    padding: 0px;
+    margin-top: 95px;
+}
+
+.preview b {
+    font-family: 'Roboto', sans-serif;
+    color: #070707;
+}
+
+.preview img {
+    Width: 943.61px;
+    Height: 387px;
+    margin-bottom: 105px;
+}
+
+.info {
+    padding-top: 120px;
+    padding-bottom: 107px;
+    background: #F6F6F6;
+}
+
+h2 {
+    font-family: 'Roboto', sans-serif;
+    font-size: 34px;
+    line-height: 42px;
+}
+
+.info p {
+    font-size: 18px;
+    line-height: 22px;
+}
+
+.skills {
+    padding-top: 90px;
+    padding-bottom: 110px;
+}
+
+.skills p {
+    margin-top: 69px;
+}
+
+.apps {
+    display: flex;
+    justify-content: center;
+}
+
+.skill_app {
+    text-align: center;
+    padding: 80px;
+}
+
+.skill_app p {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+
+.skill_app img {
+    background: #070707;
+}
+
+.star_off {
+    opacity: 0.1;
+}
+
+.stars {
+    font-size: 26px;
+    margin: 0px;
+}
+
+.figma_app img {
+    background: transparent;
+    padding-top: 80px;
+
+}
+
+.figma_app p {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #828282;
+}
+
+.portfolio {
+    background: #F6F6F6;
+    padding-top: 113px;
+    padding-bottom: 96px;
+}
+
+.portfolio>h2 {
+    margin-bottom: 47px;
+}
+
+.portfolio>p {
+    margin-top: 45px;
+    margin-bottom: 100px;
+}
+
+.portfolio a {
+    color: #070707;
+}
+
+.contacts {
+    padding-top: 114px;
+    padding-bottom: 123px;
+}
+
+.contacts p {
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.contacts button {
+    background: #070707;
+    border-radius: 40px;
+    padding: 13px 30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+
+}
+
+.contacts button:hover {
+    background: #373737;
+}
+
+.contacts button:active {
+    background: #FFFFFF;
+    color: #070707;
+    border: solid #070707 1px;
+}
+
+.icons {
+    padding-top: 80px;
+    padding-bottom: 46px;
+    display: flex;
+    justify-content: space-between;
+    width: 263px;
+    margin: 0 auto;
+}
+
+.icons img {
+    width: 40px;
+    height: 40px;
+}
+
+.P_S {
+    font-size: 14px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    line-height: 17px;
+    color: #828282;
+}
