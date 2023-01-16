@@ -21,11 +21,7 @@
     a {
       text-decoration: none;
       color: gray;
-      
-    }
 
-    a:hover {
-      color: #00fefe;
     }
 
     a:active {
@@ -40,6 +36,16 @@
       font-size: 2rem;
       line-height: 2rem;
 
+    }
+
+    .list_1:hover,
+    .list_2:hover {
+      background: gray;
+    }
+
+    .list_1:hover a,
+    .list_2:hover a {
+      color: #00fefe;
     }
 
     .list {
@@ -61,7 +67,7 @@
 
     .list_2 {
       margin: 25px;
-      padding: 15px 30px ;
+      padding: 15px 30px;
       border: solid #00fefe 2px;
       border-radius: 50px;
       border-top-right-radius: 10px;
@@ -70,17 +76,12 @@
       line-height: 100px;
     }
 
-    .list_1:hover,
-    .list_2:hover {
-      background: gray;
-
-    }
-
     .list_1:active,
     .list_2:active {
       border: #008787;
       background: rgb(61, 60, 60);
     }
+
     .list_name {
       text-align: center;
       border: solid #00fefe 2px;
@@ -90,29 +91,36 @@
       color: aliceblue;
       margin: 10px 250px 10px 290px;
     }
+
     @media (max-width:668px) {
       .list {
         flex-direction: column;
       }
+
       h1 {
         line-height: normal;
       }
+
       .list_name {
         margin: auto;
         padding: 10px 0;
 
       }
+
       .container {
         width: auto;
       }
+
       .list_1 {
-      border-radius: 50px;
-      border-top-right-radius: 10px;
-      border-bottom-left-radius: 10px;
+        border-radius: 50px;
+        border-top-right-radius: 10px;
+        border-bottom-left-radius: 10px;
       }
+
       .list {
         justify-content: left;
       }
+
       .list_1,
       .list_2 {
         margin-top: 20px;
@@ -127,39 +135,45 @@
   <div class="container">
     <h1>Домашние задания</h1>
     <p>Dzmitry Yeliseyenka</p>
-    <div class="list_name"><p>Задание 1</p></div>
+    <div class="list_name">
+      <p>Задание 1</p>
+    </div>
     <div class="list">
       <div class="first_list">
         <ul>
           <li><span class="list_1"><a href="DZ1/img dz 1/DIARY.html" target="_blank">Задание 1a</a></span></li>
-          
+
         </ul>
       </div>
       <div class="second_list">
         <ul>
           <li><span class="list_2"><a href="DZ1/VIZBOR/vizbor.html" target="_blank">Задание 1b</a></span></li>
-         
+
         </ul>
       </div>
     </div>
-    <div class="list_name"><p>Задание 2</p></div>
+    <div class="list_name">
+      <p>Задание 2</p>
+    </div>
     <div class="list">
       <div class="first_list">
         <ul>
           <li><span class="list_1"><a href="DZ2/childbook/CHILDBOOK.html" target="_blank">Задание 2a</a></span></li>
           <li><span class="list_1"><a href="DZ2/2c.html" target="_blank">Задание 2c</a></span></li>
-          
+
         </ul>
       </div>
       <div class="second_list">
         <ul>
           <li><span class="list_2"><a href="DZ2/2b.html" target="_blank">Задание 2b</a></span></li>
           <li><span class="list_2"><a href="DZ2/SG.html" target="_blank">Задание SG</a></span></li>
-         
+
         </ul>
       </div>
     </div>
-    <div class="list_name"><p>Задание 3</p></div>
+    <div class="list_name">
+      <p>Задание 3</p>
+    </div>
     <div class="list">
       <div class="first_list">
         <ul>
@@ -173,11 +187,13 @@
         <ul>
           <li><span class="list_2"><a href="DZ3/FONT_GWF.html" target="_blank">Font_gwf</a></span></li>
           <li><span class="list_2"><a href="DZ3/3b.html" target="_blank">Задание 3b</a></span></li>
-         
+
         </ul>
       </div>
     </div>
-    <div class="list_name"><p>Задание 4</p></div>
+    <div class="list_name">
+      <p>Задание 4</p>
+    </div>
     <div class="list">
       <div class="first_list">
         <ul>
@@ -190,11 +206,13 @@
         <ul>
           <li><span class="list_2"><a href="DZ4/4b.html" target="_blank">Задание 4b</a></span></li>
           <li><span class="list_2"><a href="DZ4/4d.html" target="_blank">Задание 4d</a></span></li>
-         
+
         </ul>
       </div>
     </div>
-    <div class="list_name"><p>Задание 5</p></div>
+    <div class="list_name">
+      <p>Задание 5</p>
+    </div>
     <div class="list">
       <div class="first_list">
         <ul>
@@ -206,17 +224,20 @@
       <div class="second_list">
         <ul>
           <li><span class="list_2"><a href="DZ5/5.0/table.html" target="_blank">table_page</a></span></li>
-         
+
         </ul>
       </div>
     </div>
-    <div class="list_name"><p>Задание 5.5</p></div>
+    <div class="list_name">
+      <p>Задание 5.5</p>
+    </div>
     <div class="list">
       <div class="first_list">
         <ul>
           <li><span class="list_1"><a href="DZ5/5.5_correction/5.5a.html" target="_blank">Задание 5.5a</a></span></li>
           <li><span class="list_1"><a href="DZ5/5.5_correction/5.5c.html" target="_blank">Задание 5.5c</a></span></li>
-          <li><span class="list_1"><a href="DZ5/5.5_correction/5.5e/5.5e.html" target="_blank">Задание 5.5e</a></span></li>
+          <li><span class="list_1"><a href="DZ5/5.5_correction/5.5e/5.5e.html" target="_blank">Задание 5.5e</a></span>
+          </li>
 
         </ul>
       </div>
@@ -224,11 +245,13 @@
         <ul>
           <li><span class="list_2"><a href="DZ5/5.5_correction/5.5b.html" target="_blank">Задание 5.5b</a></span></li>
           <li><span class="list_2"><a href="DZ5/5.5_correction/5.5d.html" target="_blank">Задание 5.5d</a></span></li>
-         
+
         </ul>
       </div>
     </div>
-    <div class="list_name"><p>Задание 6</p></div>
+    <div class="list_name">
+      <p>Задание 6</p>
+    </div>
     <div class="list">
       <div class="first_list">
         <ul>
@@ -243,31 +266,35 @@
           <li><span class="list_2"><a href="DZ6/CSS_Chess.html" target="_blank">Css_chess</a></span></li>
           <li><span class="list_2"><a href="DZ6/Stars.html" target="_blank">Stars</a></span></li>
           <li><span class="list_2"><a href="DZ6/6f.html" target="_blank">Задание 6f</a></span></li>
-         
+
         </ul>
       </div>
     </div>
-    <div class="list_name"><p>Задание 7</p></div>
+    <div class="list_name">
+      <p>Задание 7</p>
+    </div>
     <div class="list">
       <div class="first_list">
         <ul>
           <li><span class="list_1"><a href="DZ7/MAKER_ADAPT.html" target="_blank">Maket_adapt</a></span></li>
-          
+
         </ul>
       </div>
     </div>
-    <div class="list_name"><p>Задание 9</p></div>
+    <div class="list_name">
+      <p>Задание 9</p>
+    </div>
     <div class="list">
       <div class="first_list">
         <ul>
-          <li><span class="list_1"><a href="DZ9/Figma_maket.html" target="_blank">First_maket_figma</a></span></li>
-          
+          <li><span class="list_1"><a href="DZ9/Index.html" target="_blank">Denis_Novik</a></span></li>
+
         </ul>
       </div>
       <div class="second_list">
         <ul>
-          <li><span class="list_2"><a href="DZ9/Figma_maket_m.html" target="_blank">Figma_maket_mobile</a></span></li>
-         
+          <li><span class="list_2"><a href="DZ9/Figma_maket_m.html" target="_blank">Novik_mobile</a></span></li>
+
         </ul>
       </div>
     </div>
