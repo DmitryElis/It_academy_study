@@ -116,8 +116,7 @@ h1 {
     font-weight: var(--weight);
 }
 
-.text_vertical>a,
-.text_vertical_m>a {
+.text_vertical>a, {
     text-decoration: none;
     font-size: 16px;
     font-weight: var(--weight);
@@ -131,7 +130,8 @@ h1 {
     color: var(--textcolor);
 }
 
-.text_vertical>a:active {
+.text_vertical>a:active,
+.text_vertical_m>a:active {
     opacity: 0.7;
 }
 
@@ -445,6 +445,9 @@ h2 {
     line-height: 42px;
     color: var(--textcolor);
     transform: rotate(90deg)
+}
+.text_vertical_m>a {
+    color: var(--firstcolor);
 }
 
 
