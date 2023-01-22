@@ -8,14 +8,43 @@
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <title>Denis Novik</title>
+    <script>
+		window.addEventListener("DOMContentLoaded", function () {
+    document.querySelector(".menu_mobile").addEventListener("click", function () { 
+        document.querySelector(".m_menu").classList.add("m_menu_visible");
+    });
+    document.body.addEventListener("click", function (e) {
+        if (!e.target.closest(".menu_mobile")) {
+            document.querySelector(".m_menu").classList.remove("m_menu_visible");
+        }
+    });
+});
+
+	</script>
 
 </head>
 
 <body>
     <div class="container" id="Home">
-        <div class="menu_mobile">
-            <a href="menu_mobile.html"><img src="img/Menu_mobile.png" width="33" height="19.20"></a>
+        <div class="m_menu">
+            <nav class="navigate_m">
+                <ul>
+                    <li><a href="Index.html#Home">Home</a></li>
+                    <li><a href="Index.html#Forme">About me</a></li>
+                    <li><a href="Index.html#Skill">Skills</a></li>
+                    <li><a href="Index.html#Portfol">Portfolio</a></li>
+                    <li><a href="Index.html#Contact">Contacts</a></li>
+    
+                </ul>
+                <a href="Index.html">&#10006;</a>
+            </nav>
+            <div class="text_vertical_m">
+                <a href="#">RU</a> | <a href="#">ENG</a>
+            </div>
         </div>
+            <div class="menu_mobile">
+                <img src="img/Menu_mobile.png" width="33" height="19.20">
+            </div>
         <div class="menu_desktop">
             <nav class="navigation">
                 <ul>

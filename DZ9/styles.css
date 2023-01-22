@@ -41,7 +41,6 @@ body {
     opacity: 0.9;
 
 }
-
 .navigation ul {
     display: flex;
     list-style: none;
@@ -399,6 +398,16 @@ h2 {
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
+}
+.m_menu {
+    max-width: 375px;
+    font-family: 'Roboto', sans-serif;
+    padding: 67px 28px 57px 26px;
+    box-sizing: border-box;
+    display: none;
+}
+.m_menu_visible {
+    display: block;
 }
 
 .navigate_m {
