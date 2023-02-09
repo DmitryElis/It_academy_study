@@ -9,18 +9,18 @@
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
     <title>Denis Novik</title>
     <script>
-		window.addEventListener("DOMContentLoaded", function () {
-    document.querySelector(".menu_mobile").addEventListener("click", function () { 
-        document.querySelector(".m_menu").classList.add("m_menu_visible");
-    });
-    document.body.addEventListener("click", function (e) {
-        if (!e.target.closest(".menu_mobile")) {
-            document.querySelector(".m_menu").classList.remove("m_menu_visible");
-        }
-    });
-});
+        window.addEventListener("DOMContentLoaded", function () {
+            document.querySelector(".menu_mobile").addEventListener("click", function () {
+                document.querySelector(".m_menu").classList.add("m_menu_visible");
+            });
+            document.body.addEventListener("click", function (e) {
+                if (!e.target.closest(".menu_mobile")) {
+                    document.querySelector(".m_menu").classList.remove("m_menu_visible");
+                }
+            });
+        });
 
-	</script>
+    </script>
 
 </head>
 
@@ -34,7 +34,7 @@
                     <li><a href="Index.html#Skill">Skills</a></li>
                     <li><a href="Index.html#Portfol">Portfolio</a></li>
                     <li><a href="Index.html#Contact">Contacts</a></li>
-    
+
                 </ul>
                 <a href="Index.html">&#10006;</a>
             </nav>
@@ -42,9 +42,11 @@
                 <a href="#">RU</a> | <a href="#">ENG</a>
             </div>
         </div>
-            <div class="menu_mobile">
+        <div class="menu_mobile">
+            <button>
                 <img src="img/Menu_mobile.png" width="33" height="19.20">
-            </div>
+            </button>
+        </div>
         <div class="menu_desktop">
             <nav class="navigation">
                 <ul>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1>Подсчет дней в году</h1>
+    <div>
+        <input id="yearnow" type="number">
+        <button onclick="ClickYear()">Send</button>
+    </div>
+    <script>
+        function ClickYear() {
+            let checkYear = document.querySelector('#yearnow');
+            alert(DaysInYear(checkYear.value));
+        }
+
+
+        function DaysInYear(year) { //DaysInYear(2023)
+            if (year % 4 === 0 && year % 100 !== 0) {
+                return 366;
+            }
+
+            if (year % 400 === 0) {
+                return 366;
+            }
+
+            return 365;
+
+        }
+    </script>
+</body>
+
+</html>

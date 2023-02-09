@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        let lastname = prompt("Введите фамилию:");
+        let name = prompt("Введите имя:");
+        let surname = prompt("Введите отчество:");
+        let age = Number(prompt("Введите ваш возраст:"));
+        let sex = confirm("Вы мужчина");
+
+        let full = "Ваше ФИО:" + " " + lastname + " " + name + " " + surname + "\n";
+        full = full + "ваш возраст в годах: " + age + "\n";
+        full = full + "ваш возраст в днях: " + age * 365 + "\n";
+        full = full + "через 5 лет вам будет: " + (age + 5) + "\n";
+        full += "ваш пол:";
+        if (sex === true) {
+            full += " мужской \n";
+        } else {
+            full += " женский \n";
+        }
+        full += "вы на пенсии:";
+        if ((age > 65 && sex === true) || (age > 63 && sex === false)) {
+            full += " да";
+        } else {
+            full += " нет";
+        }
+        alert(full);
+
+
+
+    </script>
+</head>
+
+<body>
+
+
+</body>
+
+</html>

@@ -16,7 +16,14 @@ body {
 .menu_mobile {
     display: none;
 }
-
+.menu_mobile button {
+    border: none;
+    background-color: transparent;
+    margin-right: 30px;
+}
+.menu_mobile button:hover {
+    opacity: 0.8;
+}
 #avatar_m {
     display: none;
 }
@@ -258,6 +265,10 @@ h2 {
     padding-top: 113px;
     padding-bottom: 96px;
 }
+.portfolio>img:hover{
+    box-shadow: #000000 3px 3px 10px;
+    transition: all 300ms ease;
+}
 
 .portfolio>h2 {
     margin-bottom: 47px;
@@ -270,6 +281,9 @@ h2 {
 
 .portfolio a {
     color: var(--firstcolor);
+}
+.portfolio a:hover {
+    color: red;
 }
 
 .contacts {
@@ -401,10 +415,17 @@ h2 {
 }
 .m_menu {
     max-width: 375px;
+    position:relative;
+    top: 85px;
+    right: 30px;
     font-family: 'Roboto', sans-serif;
-    padding: 67px 28px 57px 26px;
+    padding: 0px 0px 57px 26px;
+    margin:0px;
     box-sizing: border-box;
     display: none;
+    z-index: 3;
+    box-sizing: border-box;
+    background: #FFFFFF;
 }
 .m_menu_visible {
     display: block;
@@ -418,7 +439,7 @@ h2 {
 .navigate_m ul {
     list-style: none;
     text-align: left;
-    margin: 0px;
+    margin: 0px 0px 0px 20px;
     padding: 0px;
 
 }
@@ -448,7 +469,7 @@ h2 {
 
 .text_vertical_m {
     position: relative;
-    bottom: -150px;
+    bottom: 0px;
     right: -150px;
     font-size: 34px;
     line-height: 42px;
@@ -457,6 +478,11 @@ h2 {
 }
 .text_vertical_m>a {
     color: var(--firstcolor);
+
+}
+.text_vertical_m>a:hover {
+    text-decoration: underline;
+    transition: all 200ms ease;
 }
 
 
@@ -487,9 +513,9 @@ h2 {
 
     .menu_mobile {
         display: block;
-        position: fixed;
-        right: 30px;
+        position: relative;
         top: 85px;
+        text-align: right;
     }
 
     .text_vertical {
